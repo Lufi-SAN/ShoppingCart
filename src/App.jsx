@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Navbar from './Navbar.jsx'
 import './App.css'
 import { Outlet } from 'react-router-dom'
 
 function App() {
-  const [cartItems, setCartItems] = useState([])
+  const [cartItems, setCartItems] = useState([ /* List of Items in Cart */])
   
   return (
     <>

@@ -1,8 +1,12 @@
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
+.searchContainer {
+    margin-inline-end: 20rem;
+}
 .searchContainer,.cartContainer {
     display: flex;
+    /* margin: 0; */
 }
