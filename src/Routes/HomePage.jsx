@@ -1,15 +1,12 @@
-import { useContext } from 'react'
 import '../Stylesheets/HomePage.css'
-import { Context } from './App'
 import PropTypes from 'prop-types'
 
 const HomePage = () => {
-    const {products} = useContext(Context)
-
+    
     return (
-        <div>
+        <div style={{backgroundColor: "red"}}>
             {/* <ImageSlider image={""} /> */}
-            <ProductList listOfProducts = {products} />
+            <ProductList listOfProducts = {[1,2,3]} />
         </div>
     )
 }
@@ -24,6 +21,7 @@ const ProductList = ({listOfProducts}) => {
             <div className="productsCardContainer">
                 {/* {listOfProducts.map(i => i + 1)} */}
             </div>
+            <div>Wassup to home page</div>
         </section>
     )
 }
